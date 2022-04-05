@@ -1,22 +1,23 @@
 import React from 'react';
 import './Header.css';
+import SearchIcon from '@mui/icons-material/Search';
+import HeaderOption from './HeaderOption';
+import { HomeIcon } from '@mui/icons-material';
 
 function Header() {
     return (
         <div className='header'>
-            <h1>This Is a Header</h1>
-
             <div className='header__left'>
-                <img src='' alt='' />
+                <img src='https://www.svgrepo.com/show/157006/linkedin.svg' alt='linkedin' />
 
                 <div className='header__search'>
-                    {/* Search Icon */}
+                    <SearchIcon />
                     <input type="text" />
                 </div>
             </div>
 
             <div className='header__right'>
-
+                <HeaderOption Icon={HomeIcon} title='Home' />
             </div>
         </div>
     )
